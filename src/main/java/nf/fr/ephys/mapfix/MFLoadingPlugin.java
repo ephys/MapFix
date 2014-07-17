@@ -4,10 +4,12 @@ import cpw.mods.fml.relauncher.IFMLLoadingPlugin;
 
 import java.util.Map;
 
+@IFMLLoadingPlugin.MCVersion(value = "1.7.10")
+@IFMLLoadingPlugin.Name(value = "MapFix")
 public class MFLoadingPlugin implements IFMLLoadingPlugin {
 	@Override
 	public String[] getASMTransformerClass() {
-		return new String[] { "nf.fr.ephys.playerproxies.common.core.ASMTransformer.ItemMapTransformer" };
+		return new String[] { "nf.fr.ephys.mapfix.ItemMapTransformer" };
 	}
 
 	@Override

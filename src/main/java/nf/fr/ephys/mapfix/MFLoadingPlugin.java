@@ -4,7 +4,7 @@ import cpw.mods.fml.relauncher.IFMLLoadingPlugin;
 
 import java.util.Map;
 
-public class MPLoadingPlugin implements IFMLLoadingPlugin {
+public class MFLoadingPlugin implements IFMLLoadingPlugin {
 	@Override
 	public String[] getASMTransformerClass() {
 		return new String[] { "nf.fr.ephys.playerproxies.common.core.ASMTransformer.ItemMapTransformer" };
